@@ -7,7 +7,7 @@ namespace MvcApiCall.Controllers
     {
         public IActionResult Index()
         {
-            var allArticles = Article.GetArticles("[QJmUAg80RmZlE8EF0Nbhq5smFHmX0zqA]");
+            var allArticles = Article.GetArticles(EnvironmentVariables.ApiKey);
             return View(allArticles);
         }
     }
